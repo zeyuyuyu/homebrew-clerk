@@ -27,7 +27,7 @@ Remove it along with `~/.clerk` (history, settings, device id):
 brew uninstall --zap --cask clerk
 ```
 
-## Before you install
+## Permissions
 
 Clerk is **not sandboxed and cannot be** — moving the pointer and typing are
 things macOS only permits outside the sandbox, which is also why it isn't on
@@ -36,14 +36,6 @@ Recording**, and it cannot act until both are granted.
 
 The builds are signed with a Developer ID certificate and notarized by Apple,
 so they open without a Gatekeeper prompt and `--no-quarantine` is not needed.
-
-It really does operate your computer, which means it can do irreversible
-things — delete files, send messages, submit forms. Models make mistakes and
-misread intent. Run it on a machine where you are willing to accept that.
-
-Screenshots taken while a task runs are uploaded to your account so the
-transcript syncs across your devices, and they capture whatever is on screen.
-See the [privacy policy](https://www.getcomputeruse.com/privacy).
 
 ## Links
 

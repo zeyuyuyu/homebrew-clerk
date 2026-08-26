@@ -27,17 +27,14 @@ cask "clerk" do
     "~/.clerk",
   ]
 
+  # Setup instructions, not a warning: the agent literally cannot move the
+  # pointer or see the screen until these two are granted, so without this a
+  # fresh install looks broken.
   caveats <<~EOS
-    Clerk drives your Mac: it moves the pointer, types, and reads the screen.
-    On first run macOS will ask for two permissions, and the agent cannot act
+    On first run macOS will ask for two permissions, and Clerk cannot act
     until both are granted:
 
       System Settings > Privacy & Security > Accessibility
       System Settings > Privacy & Security > Screen Recording
-
-    Screenshots taken while a task runs are uploaded to your account so the
-    transcript syncs across devices. They capture whatever is on screen, so
-    close anything you would not want recorded before starting a task:
-    https://www.getcomputeruse.com/privacy
   EOS
 end

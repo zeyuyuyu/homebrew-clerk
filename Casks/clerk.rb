@@ -1,9 +1,9 @@
 cask "clerk" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.17.0"
-  sha256 arm:   "bab965546fba5f8b29865f863dd1a3ec9ddfc554cf6ff6b6873ccec58eaada4f",
-         intel: "02911633b6b7a2b262e9912e59587e85a4b384fbf66db9d0afb1657ecc79199e"
+  version "0.18.0"
+  sha256 arm:   "7a4274038e68d6aa389aa5351635697db9c11e23b2e2d4fdca0c3b0d9262c9e8",
+         intel: "df4f3a2fb9bdfdf9b796d1072034348cf7afb76d6c5bbfb11c92c563e92a3783"
 
   # Versioned on purpose. The unversioned /download/mac/#{arch} always serves
   # the current build, so its bytes change under the cask and every install
